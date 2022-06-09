@@ -1,0 +1,180 @@
+h1 {
+    text-align: center;
+    color: linen;
+}
+
+h2 {
+    text-align: center;
+    color: linen;
+}
+
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteneur {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#reco {
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+    margin-top: 5%;
+}
+
+#res_recherche {
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+
+#search {
+    background-color: aliceblue;
+}
+
+.blank {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.YourList {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 300%;
+    color: wheat;
+}
+
+.element_1 {
+    background-color: #242424;
+    flex-direction: column;
+}
+
+.element_2 {
+    background-color: #242424;
+}
+
+.element_3 {
+    background-color: #242424;
+}
+
+.element_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 3;
+}
+
+.element_5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 3;
+}
+
+.element_6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 3;
+}
+
+#barre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+
+.element_7 {
+    flex: 1;
+}
+
+.element_8 {
+    flex: 1;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    flex: 3;
+    align-items: center;
+}
+
+.champ {
+    width: 80%;
+    height: 50%;
+    background-color: wheat;
+    border-radius: 10px;
+    text-align: start;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25;
+}
+
+.bouton {
+    height: 30%;
+    background-color: wheat;
+    border-radius: 10px
+}
+
+/* unvisited link */
+a:link {
+    color: wheat;
+}
+
+/* visited link */
+a:visited {
+    color: wheat;
+}
+
+/* mouse over link */
+a:hover {
+    color: wheat;
+}
+
+/* selected link */
+a:active {
+    color: wheat;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
