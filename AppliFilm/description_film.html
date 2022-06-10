@@ -7,7 +7,24 @@
 </head>
 
 <body style="background-color:#242424;">
-    <script src="script.js"></script>
+    <script>
+        function processEtoile(img) {
+
+            id = img.getAttribute('data-monid')
+
+            if ((localStorage.getItem(id))) {
+                img.src = 'assets/etoile vide.png'
+                localStorage.removeItem(id)
+            }
+
+            else {
+                img.src = "assets/etoile.png"
+                obj = { 'title': img.getAttribute('data-title'), 'id': id, 'path': img.getAttribute('data-path') }
+                console.log(obj)
+                localStorage.setItem(id, JSON.stringify(obj))
+            }
+        }
+    </script>
 
     <header>
         <div id="head">
@@ -16,20 +33,22 @@
             <div class="YourList"><a href="your_list.html">Your List ! </a></div>
         </div>
     </header>
-<div>
-    <h1>TITRE DU FILM</h1>
-</div>
-<div id="description">
-    <div class="element_7"><img src="assets/Batman.jpg" width="70%"></div>
-    <div class="element_8">          
-    <ul>
-        <li>Year:</li>
-        <li>Director</li>
-        <li>Overview</li>
-        <li>IMdB's rating</li>
-    </ul>
-</div>
-</div>
+    <div>
+        <h1>TITRE DU FILM</h1>
+    </div>
+    <div id="description">
+        <div class="element_7"><img id="img_film" src="assets/Batman.jpg" width="70%">
+            <img class="img_etoile" src="assets/etoile vide.png" onclick="processEtoile(this)" width="10%"
+                data-monid='414906' data-title="The Batman" data-path="assets/Batman.jpg" />
+        </div>
+        <div class="element_8">
+            <ul>
+                <li>Year : <span id="year"></span></li>
+                <li>Overview : <span id="overview"></span></li>
+                <li>IMdB's rating : <span id="rating"></span></li>
+            </ul>
+        </div>
+    </div>
     <footer id="col">
         <div id="conteneur">
             <div class="element_1"><a href="contact.html">Contact</a> </div>
@@ -39,6 +58,6 @@
     </footer>
 </body>
 
-<script src="script_recherche.js" />
+<script src="script_description_film.js"></script>
 
 </html>
