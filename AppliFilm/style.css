@@ -70,7 +70,6 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 200%;
     color: wheat;
@@ -162,8 +161,7 @@ h3{
     background-color: wheat;
     border-radius: 10px;
     text-align: start;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 25;
+    font-size: 20;
 }
 
 .bouton {
