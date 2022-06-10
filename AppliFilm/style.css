@@ -35,7 +35,12 @@ h2 {
     margin-top: 0;
     margin-bottom: 5%;
 }
-
+#description {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4%;
+}
 
 #search {
     background-color: aliceblue;
@@ -46,7 +51,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .logo {
@@ -54,7 +58,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .YourList {
@@ -70,14 +73,17 @@ h2 {
 .element_1 {
     background-color: #242424;
     flex-direction: column;
+    color: wheat;
 }
 
 .element_2 {
     background-color: #242424;
+    color: wheat;
 }
 
 .element_3 {
     background-color: #242424;
+    color: wheat;
 }
 
 .element_4 {
@@ -113,10 +119,17 @@ h2 {
 
 .element_7 {
     flex: 1;
+    display: flex;
+    background-color: thistle;
+    align-items: center;
+    justify-content: center;
 }
 
 .element_8 {
     flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: tomato;
 }
 
 .formulaire {
