@@ -1,6 +1,6 @@
 const API_TOKEN = "d8472ade6d9d6af33d55519cc2440ab2"
 
-text = "The Batman"
+text = localStorage.getItem('current_film_description')
 
 function getFilms(text) {
     const url = 'https://api.themoviedb.org/3/search/movie?api_key=' + API_TOKEN + '&language=fr&query=' + text
