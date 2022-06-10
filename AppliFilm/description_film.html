@@ -7,6 +7,7 @@
 </head>
 
 <body style="background-color:#242424;">
+    <script src="script_description_film.js"></script>
     <script>
         function processEtoile(img) {
 
@@ -34,7 +35,7 @@
         </div>
     </header>
     <div>
-        <h1>TITRE DU FILM</h1>
+        <h1 id="titre_modif"></h1>
     </div>
     <div id="description">
         <div class="element_7"><img id="img_film" src="assets/Batman.jpg" width="70%">
@@ -43,9 +44,9 @@
         </div>
         <div class="element_8">
             <ul>
-                <li>Year : <span id="year"></span></li>
-                <li>Overview : <span id="overview"></span></li>
-                <li>IMdB's rating : <span id="rating"></span></li>
+                <li><h3>Year: <span id="year"></span></h3></li>
+                <li><h3>Overview : <span id="overview"></span></h3></li>
+                <li><h3>IMdB's rating : <span id="rating"></span></h3></li>
             </ul>
         </div>
     </div>
@@ -58,6 +59,6 @@
     </footer>
 </body>
 
-<script src="script_description_film.js"></script>
+
 
 </html>

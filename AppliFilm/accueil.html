@@ -24,62 +24,41 @@
         </form>
         <div class="element_8"></div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
     <div id="recherches">
-
     </div>
-
-
-
-
     <script>
         function storeFilm(a) {
             localStorage.setItem('current_film_description', a.getAttribute('data-title'))
             console.log(a.getAttribute('data-title'))
         }
     </script>
-
-
-
-
-
-
     <h1>Recommandations</h1>
     <section>
         <div id="reco">
             <div class="blank"></div>
             <div class="element_4">
-
-
-                <a data-title="Interstellar" href="description_film.html" onclick="storeFilm(this)">
-                    <h2>Interstellar</h2><img src="assets/Interstellar.jpg" width="70%">
+                <a data-title="Interstellar" href="description_film.html" onclick="storeFilm(this)" class="element_4">
+                    <h2>Interstellar</h2>
+                    <img src="assets/Interstellar.jpg" width="70%">
                 </a>
-
-
-
                 <img class="img_etoile" src="assets/etoile vide.png" onclick="processEtoile(this)" width="10%"
                     data-monid='157336' data-title="Interstellar" data-path="assets/Interstellar.jpg" /></a>
             </div>
             <div class="element_5">
-                <h2>Las Vegas Parano</h2> <img src="assets/LasVegasParano.jpg" width="70%">
+                <a data-title="Las Vegas Parano" href="description_film.html" onclick="storeFilm(this)" class="element_5">
+                    <h2>Las Vegas Parano</h2>
+                    <img src="assets/LasVegasParano.jpg" width="70%">
+                </a>
                 <img class="img_etoile" src="assets/etoile vide.png" onclick="processEtoile(this)" width="10%"
-                    data-monid='1878' data-title="Las Vegas Parano" data-path="assets/LasVegasParano.jpg" />
-
+                    data-monid='1878' data-title="Las Vegas Parano" data-path="assets/LasVegasParano.jpg" /></a>
             </div>
             <div class="element_6">
-                <h2>The Batman</h2><img src="assets/Batman.jpg" width="70%">
+                <a data-title="The Batman" href="description_film.html" onclick="storeFilm(this)" class="element_6">
+                    <h2>The Batman</h2>
+                    <img src="assets/Batman.jpg" width="70%">
+                </a>
                 <img class="img_etoile" src="assets/etoile vide.png" onclick="processEtoile(this)" width="10%"
-                    data-monid='414906' data-title="The Batman" data-path="assets/Batman.jpg" />
+                    data-monid='414906' data-title="The Batman" data-path="assets/Batman.jpg" /></a>
             </div>
             <div class="blank"></div>
         </div>

@@ -7,6 +7,9 @@ h2 {
     text-align: center;
     color: linen;
 }
+h3{
+    color: linen;
+}
 
 #head {
     display: flex;
@@ -19,27 +22,28 @@ h2 {
     justify-content: space-around;
     align-items: center;
     margin-top: 5%;
+    margin-bottom: 2%;
 }
 
 #reco {
     display: flex;
-    justify-content: space-around;
-    height: 50%;
+    flex-wrap:wrap;
     margin-top: 5%;
+}
+#recherches {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+
 }
 
 #res_recherche {
     display: flex;
-    justify-content: space-around;
-    height: 50%;
-    margin-top: 0;
-    margin-bottom: 5%;
+    flex-wrap:wrap;
+    margin-top: 5%;
 }
-
 #description {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     margin-top: 4%;
 }
 
@@ -66,32 +70,37 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 300%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 200%;
     color: wheat;
+    border: 3px wheat solid;
+    border-radius: 20px;
 }
 
 .element_1 {
     background-color: #242424;
     flex-direction: column;
     color: wheat;
+    font-size: 18;
 }
 
 .element_2 {
     background-color: #242424;
     color: wheat;
+    font-size: 18;
 }
 
 .element_3 {
     background-color: #242424;
     color: wheat;
+    font-size: 18;
 }
-
 .element_4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex: 3;
 }
 
@@ -121,18 +130,24 @@ h2 {
 .element_7 {
     flex: 1;
     display: flex;
-    background-color: thistle;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .element_8 {
     flex: 1;
     display: flex;
-    align-items: center;
-    background-color: tomato;
+    margin-right: 5%;
 }
-
+.element_9 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    width: 33%;
+}
 .formulaire {
     display: flex;
     justify-content: center;
@@ -152,9 +167,11 @@ h2 {
 }
 
 .bouton {
-    height: 30%;
+    height: 50%;
     background-color: wheat;
-    border-radius: 10px
+    border-radius: 10px;
+    font-size: 20;
+    margin-left: 10px;
 }
 
 /* unvisited link */
@@ -193,13 +210,7 @@ a:active {
     text-decoration: none;
 }
 
-
-
-
-
-
-
-#lien_img {
-    display: flex;
-    justify-content: center;
+.img_etoile
+{
+    margin-top: 3%;
 }

@@ -27,7 +27,7 @@ function getFilms(text) {
 }
 
 first_results = []
-nb_films = 5
+nb_films = 15
 
 function processData(data) {
     first_results = []
@@ -43,15 +43,6 @@ function processData(data) {
 
         first_results.push(film)
     }
-}
-
-
-
-function updateButton() {
-    champ_text = document.getElementById('champ_text')
-    text = champ_text.value
-    getFilms(text).then(processData)
-
     new_part = '<h1>Résultats de la recherche</h1> \
                     <section> \
                     <div id="res_recherche"> \
@@ -66,21 +57,31 @@ function updateButton() {
             src = "assets/etoile.png"
         }
 
-        new_film = '<div class="element_4"> \
-        <h2>' + first_results[i].title + '</h2><img src=' + first_results[i].poster_path + ' width="70%"> \
+        new_film = '<div class="element_9"> \
+        <a data-title="' + first_results[i].title +'" href="description_film.html" onclick="storeFilm(this)" class="element_4">\
+        <h2>' + first_results[i].title + '</h2><img src=' + first_results[i].poster_path + ' width="70%"></a> \
         <img src="' + src + '" onclick="processEtoile(this)" width="15%" data-monid="' + id + '" data-title="' + first_results[i].title + '" data-path="' + first_results[i].poster_path + '" /> \
         </div>'
 
         new_part += new_film
     }
 
-    new_part += '<div class="blank"></div>'
 
     // await sessionStorage.setItem("recherches_resultats", new_part);
 
     recherches = document.getElementById('recherches')
     recherches.innerHTML = ''
     recherches.innerHTML = new_part
+}
+
+
+
+function updateButton() {
+    champ_text = document.getElementById('champ_text')
+    text = champ_text.value
+    getFilms(text).then(processData)
+
+    
 
     // location.href = 'recherche.html';
 
@@ -89,7 +90,16 @@ function updateButton() {
 window.onload = function () {
     var button = document.getElementById('button');
     button.addEventListener('click', updateButton);
-}
+
+    var input = document.getElementById('champ_text');
+    input.addEventListener('keypress', function (event) {
+        if (event.key == 'Enter') {
+            event.preventDefault()
+            updateButton()
+        }
+    });
+
+}   
 
 
 

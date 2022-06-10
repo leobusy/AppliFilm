@@ -45,7 +45,7 @@ window.onload = function () {
 
     console.log(liste_objets)
 
-    new_part = '<div class="blank"></div>'
+    new_part = ''
 
     n = liste_objets.length
 
@@ -54,15 +54,16 @@ window.onload = function () {
 
         src = "assets/etoile.png"
 
-        new_film = '<div class="element_4"> \
-        <h2>' + liste_objets[i].title + '</h2><img src=' + liste_objets[i].path + ' width="70%"> \
-        <img src="' + src + '" onclick="processEtoile(this)" width="15%" data-monid="' + liste_objets[i].id + '" data-title="' + liste_objets[i].title + '" data-path="' + liste_objets[i].path + '"   /> \
+        new_film = '<div class="element_9"> \
+        <a data-title="' + liste_objets[i].title +'" href="description_film.html" onclick="storeFilm(this)" class="element_4">\
+        <h2>' + liste_objets[i].title + '</h2><img src=' + liste_objets[i].path + ' width="50%"></a>\
+        <img src="' + src + '" onclick="processEtoile(this)" width="7%" data-monid="' + liste_objets[i].id + '" data-title="' + liste_objets[i].title + '" data-path="' + liste_objets[i].path + '"   /> \
         </div>'
 
         new_part += new_film
     }
 
-    new_part += '<div class="blank"></div>'
+
 
     liste.innerHTML = ''
     liste.innerHTML = new_part

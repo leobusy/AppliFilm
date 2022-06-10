@@ -25,6 +25,11 @@ function processData(data) {
     document.getElementById('overview').innerHTML = result.overview
 
     document.getElementById('img_film').src = result.path
+    document.getElementById('titre_modif').innerHTML = results[0].title
+
+
 }
 
 getFilms(text).then(processData)
+
+console.log("coucou")
